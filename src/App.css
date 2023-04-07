@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -14,8 +18,40 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  background-color: black;
+  color: white;
 }
-
+.searchSection>*{
+  margin-bottom: 1rem;
+}
+.searchSection>input{
+  height: 2.2rem;
+  width:250px;
+}
+.searchSection>button{
+  height: 2.2rem;
+  background-color: red;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.games{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.game{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  border: 2px solid white;
+}
+.game>*{
+  margin-bottom: .4rem;
+}
 .dealsSection{
   flex: 50%;
   width: 100%;
